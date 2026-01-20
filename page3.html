@@ -3,62 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop Now on Amazon.com - Amazon.com Official Site</title>
+    <title>Find Trusted Senior Care Resources | SeniorCare Guide</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    
     <style>
-        body {
-            background-color: #1a0d4b;
-            color: white;
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            line-height: 1.6;
-            text-align: center;
+        :root {
+            --primary: #28a745;     /* green accent */
+            --dark: #212529;
+            --light: #f8f9fa;
+            --gray: #6c757d;
         }
-        .visit-btn {
-            display: inline-block;
-            background-color: #ffffff;
-            color: #000000;
-            padding: 15px 30px;
-            margin: 20px;
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--dark);
+            background-color: var(--light);
+            margin: 0;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo {
+            font-family: 'Roboto Slab', serif;
+            font-size: 2rem;
+            color: var(--primary);
             text-decoration: none;
-            border-radius: 5px;
             font-weight: bold;
         }
-        .visit-btn:hover {
-            background-color: #f0f0f0;
+        nav a {
+            margin-left: 25px;
+            color: var(--gray);
+            text-decoration: none;
+            font-weight: 600;
         }
-        .footer {
+        nav a:hover {
+            color: var(--primary);
+        }
+        h1, h2 {
+            font-family: 'Roboto Slab', serif;
+            color: var(--dark);
             text-align: center;
-            margin-top: 50px;
-            font-size: 0.8em;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            padding: 40px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 18px 50px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.4em;
+            margin: 30px 0;
+            transition: all 0.3s;
+            box-shadow: 0 4px 12px rgba(40,167,69,0.3);
+        }
+        .btn:hover {
+            background-color: #218838;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(40,167,69,0.4);
+        }
+        p {
+            max-width: 800px;
+            margin: 0 auto 25px;
+            font-size: 1.1em;
+        }
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+            text-align: center;
+            margin-top: 80px;
+        }
+        footer a {
+            color: #adb5bd;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        footer a:hover {
+            color: white;
         }
     </style>
+    
     <script>
         function redirectToOffer() {
-            // Real CPA links yahan daal do (random shuffle hoga)
-            var offers = [
-                "https://your-cpa-link1.com?aff=yourid",  // Change to real
-                "https://your-cpa-link2.com?aff=yourid",
-                "https://your-cpa-link3.com?aff=yourid",
-                "https://your-cpa-link4.com?aff=yourid",
-                "https://your-cpa-link5.com?aff=yourid"
+            // Real CPA links yahan daal do (jitne chaho add kar sakte ho)
+            const offers = [
+                "https://your-cpa-network.com/offer1?aff=yourid&source=seniorcare",
+                "https://your-cpa-network.com/offer2?aff=yourid&source=seniorcare",
+                "https://your-cpa-network.com/offer3?aff=yourid&source=seniorcare",
+                "https://your-cpa-network.com/offer4?aff=yourid&source=seniorcare"
             ];
-            var randomOffer = offers[Math.floor(Math.random() * offers.length)];
+            const randomOffer = offers[Math.floor(Math.random() * offers.length)];
             window.location.href = randomOffer;
         }
     </script>
 </head>
 <body>
-    <h1>Shop Now on Amazon.com - Amazon.com Official Site</h1>
-    <p>Sponsored Links: www.amazon.com | i</p>
-    <p>Browse & discover millions of products. Read customer reviews and find best sellers. Yes, we ship to you. Shop top brands in electronics, clothing, books & more.</p>
-    <a href="#" onclick="redirectToOffer(); return false;" class="visit-btn">▶ Visit Website</a>
-    <h2>Web Results</h2>
-    <p>Senior Care: A Guide to Understanding Support Options for Older Adults - January 12, 2026 No Comments ...adults want to stay at home, and with the right mix of help, that can work well for years. In-home care ranges from a few hours of weekly companionship to...</p>
-    <p>Read More →</p>
-    <p>This Is What Smart Homes Will Look Like In 2030 - November 16, 2025 No Comments ...a smart home will be interconnected, allowing for seamless communication and control. This interconnection will extend beyond the confines of the home, creating a network of smart cities where homes...</p>
-    <p>Read More →</p>
-    <p>Understanding-the-medical-gap-and-rising-health-insurance-premiums - December 25, 2025 No Comments ...rules. In these states, a working adult without a qualifying disability or caregiving role may face income limits far below the federal poverty line, leaving them ineligible for public coverage...</p>
-    <p>Read More →</p>
-    <div class="footer">© 2026 articledigesttoday.com | Imprint | Privacy Policy | Cookie Policy | About us | Contact | Terms and Conditions</div>
+
+<header>
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center;">
+        <a href="/" class="logo">SeniorCare Guide</a>
+        <nav>
+            <a href="/">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+    <section class="card">
+        <h1>Find Trusted Senior Care Resources</h1>
+        <p>Discover reliable senior care services, compare local options, get personalized recommendations, and connect with trusted providers in your area.</p>
+        <p>Whether you're looking for in-home support, assisted living, or specialized health services – we've made it easy to find the right fit for your loved ones.</p>
+        
+        <a href="#" onclick="redirectToOffer(); return false;" class="btn">
+            Find Care Options Now →
+        </a>
+    </section>
+</div>
+
+<footer>
+    <div class="container">
+        <p>
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Use</a> | 
+            <a href="#">Contact Us</a> | 
+            <a href="#">About Us</a>
+        </p>
+        <p>© 2026 SeniorCare Guide. All rights reserved.</p>
+    </div>
+</footer>
+
 </body>
 </html>
