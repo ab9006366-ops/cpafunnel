@@ -4,102 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy | DailyInsightor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --background: #ffffff; /* Clean white background */
+            --accent: #007bff; /* Attractive blue accent */
+            --text-dark: #333333; /* Dark text for readability */
+            --text-light: #666666; /* Secondary text */
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
         body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--background);
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #001122;
-            color: #e0e0e0;
-            line-height: 1.7;
+            line-height: 1.8;
             font-size: 1.1em;
-        }
-        header {
-            background-color: #000814;
-            padding: 20px 0;
-            text-align: center;
-            border-bottom: 1px solid #00d4ff;
-        }
-        .logo {
-            font-size: 2.8rem;
-            color: #00d4ff;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        nav a {
-            color: #b0e0ff;
-            margin: 0 20px;
-            text-decoration: none;
-            font-size: 1.1em;
-        }
-        nav a:hover {
-            color: #00d4ff;
         }
         .container {
             max-width: 1100px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 0 30px;
+        }
+        header {
+            background-color: #f8f9fa;
+            box-shadow: 0 4px 20px var(--shadow);
+            padding: 25px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: 'Roboto Slab', serif;
+            font-size: 2.5rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 700;
+        }
+        nav a {
+            margin-left: 35px;
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        nav a:hover {
+            color: var(--accent);
         }
         h1 {
-            color: #00d4ff;
+            font-family: 'Roboto Slab', serif;
+            font-size: 3rem;
+            margin: 80px 0 40px;
             text-align: center;
-            margin-bottom: 30px;
+            color: var(--accent);
         }
         p {
             max-width: 900px;
-            margin: 0 auto 25px;
+            margin: 0 auto 30px;
+            text-align: justify;
         }
         h2 {
-            color: #00d4ff;
+            font-family: 'Roboto Slab', serif;
+            font-size: 1.8rem;
+            color: var(--accent);
             margin-top: 50px;
         }
         footer {
+            background-color: #f8f9fa;
+            color: var(--text-light);
+            padding: 80px 0 50px;
             text-align: center;
-            margin-top: 80px;
-            padding: 20px 0;
-            border-top: 1px solid #333;
-            color: #aaa;
-            font-size: 0.9em;
+            margin-top: 120px;
+            box-shadow: 0 -4px 20px var(--shadow);
+        }
+        footer a {
+            color: var(--text-light);
+            text-decoration: none;
+            margin: 0 25px;
+            font-weight: 600;
+        }
+        footer a:hover {
+            color: var(--accent);
+        }
+        footer p {
+            font-size: 1em;
+            margin: 40px 0 0;
+            color: var(--text-light);
         }
     </style>
 </head>
 <body>
 
 <header>
-    <a href="/" class="logo">DailyInsightor</a>
-    <nav>
-        <a href="/">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+    <div class="container header-content">
+        <a href="" class="logo">DailyInsightor</a>
+        <nav>
+            <a href="">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </nav>
+    </div>
 </header>
 
 <div class="container">
     <h1>Privacy Policy</h1>
-    <p>This Privacy Policy explains how DailyInsightor collects, uses, and protects your information when you visit our website.</p>
+    <p>At DailyInsightor, we value your privacy and are committed to protecting your personal information. This policy outlines how we collect, use, and safeguard data when you visit our site.</p>
 
-    <h2>Information We Collect</h2>
-    <p>We may collect non-personal information such as browser type, IP address, and pages visited to improve our content on senior care and related topics.</p>
+    <h2>1. Information Collection</h2>
+    <p>We collect non-identifiable information such as IP addresses, browser types, and page views to improve our content on senior care and related topics. No personal data is collected without your consent.</p>
 
-    <h2>How We Use Information</h2>
-    <p>The information is used to analyze trends, administer the site, and gather demographic information for aggregate use.</p>
+    <h2>2. Use of Information</h2>
+    <p>Data is used to analyze trends, administer the site, and enhance user experience. We do not sell or share your information with third parties except for trusted partners who assist in site operations.</p>
 
-    <h2>Cookies</h2>
-    <p>We use cookies to enhance your experience. You can disable cookies in your browser settings.</p>
+    <h2>3. Cookies</h2>
+    <p>We use cookies to remember your preferences and improve site functionality. You can manage cookie settings in your browser.</p>
 
-    <h2>Third-Party Links</h2>
-    <p>Our site may contain links to external sites. We are not responsible for their privacy practices.</p>
+    <h2>4. Third-Party Links</h2>
+    <p>Our site may contain links to external websites. We are not responsible for their privacy practices.</p>
 
-    <h2>Data Security</h2>
-    <p>We implement reasonable measures to protect your information from unauthorized access.</p>
+    <h2>5. Security</h2>
+    <p>We employ reasonable security measures to protect data from unauthorized access or alteration.</p>
 
-    <h2>Changes to Policy</h2>
-    <p>We may update this policy. Check this page for changes.</p>
+    <h2>6. Changes to Policy</h2>
+    <p>We may update this policy periodically. Continued use of the site constitutes acceptance of changes.</p>
 
-    <p>For questions, contact us at ab9006366@gmail.com.</p>
+    <p>For questions about this policy, contact us at ab9006366@gmail.com.</p>
 </div>
 
 <footer>
-    © 2026 DailyInsightor | All rights reserved
+    <div class="container">
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <p>© 2026 DailyInsightor. All rights reserved. Founded in 2024, providing insightful articles on daily life topics.</p>
+    </div>
 </footer>
 
 </body>
