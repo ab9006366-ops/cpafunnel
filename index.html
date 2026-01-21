@@ -4,140 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senior Care Guide | DailyInsightor</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --background: #ffffff; /* Clean white background */
-            --accent: #007bff; /* Attractive blue accent */
-            --text-dark: #333333; /* Dark text for readability */
-            --text-light: #666666; /* Secondary text */
-            --shadow: rgba(0, 0, 0, 0.1);
-        }
         body {
-            font-family: 'Open Sans', sans-serif;
-            color: var(--text-dark);
-            background-color: var(--background);
             margin: 0;
-            line-height: 1.8;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #0a1f3f, #001122); /* Attractive dark navy gradient */
+            color: #e0f0ff; /* Light blue-white text */
+            line-height: 1.7;
             font-size: 1.1em;
+            min-height: 100vh;
         }
         .container {
             max-width: 1100px;
             margin: 0 auto;
-            padding: 0 30px;
+            padding: 40px 20px;
         }
         header {
-            background-color: #f8f9fa;
-            box-shadow: 0 4px 20px var(--shadow);
+            background: rgba(0, 0, 20, 0.8);
             padding: 25px 0;
+            text-align: center;
             position: sticky;
             top: 0;
             z-index: 100;
-        }
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
         }
         .logo {
-            font-family: 'Roboto Slab', serif;
-            font-size: 2.5rem;
-            color: var(--accent);
+            font-size: 3rem;
+            font-weight: bold;
+            color: #00e6ff; /* Bright cyan for logo */
             text-decoration: none;
-            font-weight: 700;
+            letter-spacing: 1px;
         }
-        nav a {
-            margin-left: 35px;
-            color: var(--text-light);
-            text-decoration: none;
-            font-weight: 600;
-        }
-        nav a:hover {
-            color: var(--accent);
+        .logo:hover {
+            color: #ffeb3b; /* Gold hover effect */
+            transition: color 0.3s;
         }
         h1 {
-            font-family: 'Roboto Slab', serif;
-            font-size: 3rem;
-            margin: 80px 0 40px;
+            color: #00e6ff;
             text-align: center;
-            color: var(--accent);
+            margin: 60px 0 30px;
+            font-size: 2.8rem;
         }
         p {
             max-width: 900px;
-            margin: 0 auto 30px;
-            text-align: justify;
+            margin: 0 auto 25px;
+            font-size: 1.15em;
         }
         .section-title {
-            font-family: 'Roboto Slab', serif;
-            font-size: 2rem;
-            margin: 80px 0 40px;
             text-align: center;
-            color: var(--accent);
+            color: #00e6ff;
+            margin: 60px 0 30px;
+            font-size: 2em;
         }
         .button {
             display: block;
-            background-color: var(--accent);
+            background: linear-gradient(to right, #004466, #006699);
             color: white;
             padding: 18px 40px;
             margin: 20px auto;
             text-decoration: none;
             border-radius: 10px;
-            max-width: 800px;
+            max-width: 700px;
             text-align: center;
-            font-weight: 600;
             font-size: 1.3em;
+            font-weight: bold;
+            border: 1px solid #00e6ff;
+            box-shadow: 0 5px 15px rgba(0, 230, 255, 0.3);
             transition: all 0.4s;
         }
         .button:hover {
-            background-color: #0056b3;
-            transform: translateY(-4px);
-            box-shadow: 0 10px 25px rgba(0,123,255,0.4);
+            background: linear-gradient(to right, #006699, #0088aa);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 230, 255, 0.5);
         }
         footer {
-            background-color: #f8f9fa;
-            color: var(--text-light);
-            padding: 80px 0 50px;
+            background: rgba(0, 0, 20, 0.8);
+            padding: 40px 0;
             text-align: center;
-            margin-top: 120px;
-            box-shadow: 0 -4px 20px var(--shadow);
-        }
-        footer a {
-            color: var(--text-light);
-            text-decoration: none;
-            margin: 0 25px;
-            font-weight: 600;
-        }
-        footer a:hover {
-            color: var(--accent);
+            margin-top: 100px;
+            border-top: 1px solid #00e6ff;
+            color: #b0e0ff;
         }
         footer p {
-            font-size: 1em;
-            margin: 40px 0 0;
-            color: var(--text-light);
+            margin: 0;
+            font-size: 0.95em;
+        }
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2.2rem;
+            }
+            h1 {
+                font-size: 2.2rem;
+            }
+            .button {
+                font-size: 1.1em;
+                padding: 15px 30px;
+            }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="container header-content">
-        <a href="" class="logo">DailyInsightor</a>
-        <nav>
-            <a href="">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact</a>
-            <a href="privacy.html">Privacy Policy</a>
-        </nav>
-    </div>
+    <a href="" class="logo">DailyInsightor</a>
 </header>
 
 <div class="container">
     <h1>Senior Care: A Guide to Understanding Support Options for Older Adults</h1>
+
     <p>Choosing senior care can feel overwhelming, but understanding the options turns worry into a workable plan. This guide explains in-home help, community programs, and residential settings, with practical tips on costs, safety, and coordination. You'll see clear comparisons, plain-language checklists, and ideas to support family caregivers without burning out. If you're starting the search today, you'll leave with a sensible map for confident next steps.</p>
-    <p>As the population ages, the need for senior care has become more prominent. According to recent statistics from the World Health Organization, the number of people aged 60 and older is expected to double by 2050. This growth brings challenges but also opportunities to create better support systems. In-home care, for example, allows seniors to stay in familiar environments, reducing stress and promoting independence. Services can include meal preparation, medication management, and companionship, tailored to individual needs.</p>
+
+    <p>As the population ages, the need for senior care has become more prominent. According to recent statistics, the number of people aged 60 and older is expected to double by 2050. This growth brings challenges but also opportunities to create better support systems. In-home care allows seniors to stay in familiar environments, reducing stress and promoting independence. Services can include meal preparation, medication management, and companionship, tailored to individual needs.</p>
+
     <p>Community programs offer another layer of support, providing social activities, transportation, and health screenings. These programs are often low-cost or free, funded by government or non-profit organizations. Residential settings, like assisted living or nursing homes, are suitable for those needing more intensive care. Factors to consider include location, staff qualifications, and facility amenities. Safety is paramount – look for features like emergency call systems and secure entrances.</p>
+
     <p>Costs vary widely. In-home care might range from $20 to $40 per hour, while residential facilities can cost $4,000 to $8,000 per month. Medicare, Medicaid, and private insurance may cover some expenses, but planning ahead is essential. Family caregivers play a crucial role but often face burnout. Respite care and support groups can help. Ultimately, the best choice aligns with the senior's preferences, health needs, and family dynamics. Consult professionals for personalized advice.</p>
-    <p>Exploring these options can empower families to make informed decisions. Whether it's adapting a home for aging in place or choosing a community with recreational facilities, the goal is to enhance quality of life. Resources like local area agencies on aging can provide guidance. Remember, senior care is not just about medical needs but also emotional and social well-being. With the right support, older adults can thrive in their golden years.</p>
 
     <div class="section-title">Related Topics</div>
     <a href="page2.html" class="button">Elderly Care at Home</a>
@@ -145,18 +126,10 @@
     <a href="page2.html" class="button">Adult Home Care</a>
     <a href="page2.html" class="button">Buying Adult Family Home</a>
     <a href="page2.html" class="button">Do Adult Family Homes Make Money</a>
-    
-    <p>Continuing the discussion, many families opt for in-home modifications to facilitate aging in place. This can include installing grab bars, ramps, and smart home technology for monitoring health. Community resources like meal delivery services and adult day care centers provide additional support without requiring relocation. For those considering residential options, touring facilities and checking reviews is crucial. Always ask about staff-to-resident ratios and emergency protocols.</p>
-    <p>Financial planning is key. Long-term care insurance can help cover costs, but it's best to purchase it early. Government programs like Medicaid have eligibility requirements based on income and assets. Private pay is another option, but budgeting is essential. Emotional aspects are equally important. Involving the senior in decision-making respects their autonomy and reduces resistance. Support groups for caregivers offer emotional relief and practical advice.</p>
 </div>
 
 <footer>
-    <div class="container">
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <p>© 2026 DailyInsightor. All rights reserved. Founded in 2024, providing insightful articles on daily life topics.</p>
-    </div>
+    © 2026 DailyInsightor | All rights reserved
 </footer>
 
 </body>
