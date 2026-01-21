@@ -4,86 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | DailyInsightor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --background: #ffffff; /* Clean white background */
+            --accent: #007bff; /* Attractive blue accent */
+            --text-dark: #333333; /* Dark text for readability */
+            --text-light: #666666; /* Secondary text */
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
         body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--background);
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #001122;
-            color: #e0e0e0;
-            line-height: 1.7;
+            line-height: 1.8;
             font-size: 1.1em;
-        }
-        header {
-            background-color: #000814;
-            padding: 20px 0;
-            text-align: center;
-            border-bottom: 1px solid #00d4ff;
-        }
-        .logo {
-            font-size: 2.8rem;
-            color: #00d4ff;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        nav a {
-            color: #b0e0ff;
-            margin: 0 20px;
-            text-decoration: none;
-            font-size: 1.1em;
-        }
-        nav a:hover {
-            color: #00d4ff;
         }
         .container {
             max-width: 1100px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 0 30px;
+        }
+        header {
+            background-color: #f8f9fa;
+            box-shadow: 0 4px 20px var(--shadow);
+            padding: 25px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: 'Roboto Slab', serif;
+            font-size: 2.5rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 700;
+        }
+        nav a {
+            margin-left: 35px;
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        nav a:hover {
+            color: var(--accent);
         }
         h1 {
-            color: #00d4ff;
+            font-family: 'Roboto Slab', serif;
+            font-size: 3rem;
+            margin: 80px 0 40px;
             text-align: center;
-            margin-bottom: 30px;
+            color: var(--accent);
         }
         p {
             max-width: 900px;
-            margin: 0 auto 25px;
+            margin: 0 auto 30px;
+            text-align: justify;
         }
         .contact-info {
+            color: var(--accent);
             font-size: 1.2em;
-            color: #00d4ff;
             text-align: center;
+            margin: 30px 0;
         }
         footer {
+            background-color: #f8f9fa;
+            color: var(--text-light);
+            padding: 80px 0 50px;
             text-align: center;
-            margin-top: 80px;
-            padding: 20px 0;
-            border-top: 1px solid #333;
-            color: #aaa;
-            font-size: 0.9em;
+            margin-top: 120px;
+            box-shadow: 0 -4px 20px var(--shadow);
+        }
+        footer a {
+            color: var(--text-light);
+            text-decoration: none;
+            margin: 0 25px;
+            font-weight: 600;
+        }
+        footer a:hover {
+            color: var(--accent);
+        }
+        footer p {
+            font-size: 1em;
+            margin: 40px 0 0;
+            color: var(--text-light);
         }
     </style>
 </head>
 <body>
 
 <header>
-    <a href="/" class="logo">DailyInsightor</a>
-    <nav>
-        <a href="/">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+    <div class="container header-content">
+        <a href="" class="logo">DailyInsightor</a>
+        <nav>
+            <a href="">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </nav>
+    </div>
 </header>
 
 <div class="container">
     <h1>Contact Us</h1>
-    <p>We love hearing from our readers. Whether you have questions about our articles on senior care, suggestions for new topics, or feedback, feel free to reach out.</p>
+    <p>We are here to help with any questions about our articles on senior care or suggestions for new content. Reach out to us using the information below.</p>
     <p class="contact-info">Email: ab9006366@gmail.com</p>
-    <p>To contact us, simply send an email with your query. Our team responds within 48 hours during business days (Monday to Friday, 9 AM to 5 PM PKT).</p>
-    <p>For urgent inquiries, include "URGENT" in the subject line. We are committed to providing helpful responses to support your needs in senior care and related topics.</p>
+    <p>Our team monitors this email daily and aims to respond within 24-48 hours. For general inquiries, include details about the article or topic. If you have feedback or want to contribute, we're open to ideas.</p>
+    <p>DailyInsightor is committed to providing accurate information on senior care topics. Your input helps us improve.</p>
 </div>
 
 <footer>
-    © 2026 DailyInsightor | All rights reserved
+    <div class="container">
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <p>© 2026 DailyInsightor. All rights reserved. Founded in 2024, providing insightful articles on daily life topics.</p>
+    </div>
 </footer>
 
 </body>
