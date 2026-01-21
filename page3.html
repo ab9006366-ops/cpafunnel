@@ -3,83 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find Resources | DailyInsightor</title>
+    <title>Explore Senior Care Resources | DailyInsightor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --background: #ffffff; /* Clean white background */
+            --accent: #007bff; /* Attractive blue accent */
+            --text-dark: #333333; /* Dark text for readability */
+            --text-light: #666666; /* Secondary text */
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
         body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--background);
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #001122;
-            color: #e0e0e0;
-            line-height: 1.7;
+            line-height: 1.8;
             font-size: 1.1em;
-            text-align: center;
-        }
-        header {
-            background-color: #000814;
-            padding: 20px 0;
-            text-align: center;
-            border-bottom: 1px solid #00d4ff;
-        }
-        .logo {
-            font-size: 2.8rem;
-            color: #00d4ff;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        nav a {
-            color: #b0e0ff;
-            margin: 0 20px;
-            text-decoration: none;
-            font-size: 1.1em;
-        }
-        nav a:hover {
-            color: #00d4ff;
         }
         .container {
             max-width: 1100px;
             margin: 0 auto;
-            padding: 60px 20px;
+            padding: 0 30px;
+        }
+        header {
+            background-color: #f8f9fa;
+            box-shadow: 0 4px 20px var(--shadow);
+            padding: 25px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: 'Roboto Slab', serif;
+            font-size: 2.5rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 700;
+        }
+        nav a {
+            margin-left: 35px;
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        nav a:hover {
+            color: var(--accent);
         }
         h1 {
-            color: #00d4ff;
-            margin-bottom: 30px;
+            font-family: 'Roboto Slab', serif;
+            font-size: 3rem;
+            margin: 80px 0 40px;
+            text-align: center;
+            color: var(--accent);
         }
         p {
             max-width: 900px;
-            margin: 0 auto 25px;
+            margin: 0 auto 30px;
+            text-align: justify;
+        }
+        .section-title {
+            font-family: 'Roboto Slab', serif;
+            font-size: 2rem;
+            margin: 80px 0 40px;
+            text-align: center;
+            color: var(--accent);
         }
         .button {
-            display: inline-block;
-            background-color: #002244;
+            display: block;
+            background-color: var(--accent);
             color: white;
-            padding: 22px 60px;
-            margin: 50px 0;
+            padding: 18px 40px;
+            margin: 20px auto;
             text-decoration: none;
             border-radius: 10px;
-            font-size: 1.5em;
-            font-weight: bold;
-            border: 1px solid #00d4ff;
-            transition: all 0.3s;
+            max-width: 800px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.3em;
+            transition: all 0.4s;
         }
         .button:hover {
-            background-color: #004466;
-            transform: scale(1.05);
+            background-color: #0056b3;
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0,123,255,0.4);
         }
         footer {
+            background-color: #f8f9fa;
+            color: var(--text-light);
+            padding: 80px 0 50px;
             text-align: center;
-            margin-top: 100px;
-            padding: 20px 0;
-            border-top: 1px solid #333;
-            color: #aaa;
-            font-size: 0.9em;
+            margin-top: 120px;
+            box-shadow: 0 -4px 20px var(--shadow);
+        }
+        footer a {
+            color: var(--text-light);
+            text-decoration: none;
+            margin: 0 25px;
+            font-weight: 600;
+        }
+        footer a:hover {
+            color: var(--accent);
+        }
+        footer p {
+            font-size: 1em;
+            margin: 40px 0 0;
+            color: var(--text-light);
         }
     </style>
     <script>
         function redirectToOffer() {
             const offers = [
-                "https://example.com/offer1?aff=abdul",
-                "https://example.com/offer2?aff=abdul",
-                "https://example.com/offer3?aff=abdul"
+                "https://example.com/offer1?aff=abdul",  // Real CPA link 1
+                "https://example.com/offer2?aff=abdul",  // Real CPA link 2
+                "https://example.com/offer3?aff=abdul"   // Real CPA link 3
             ];
             const random = offers[Math.floor(Math.random() * offers.length)];
             window.location.href = random;
@@ -89,27 +131,37 @@
 <body>
 
 <header>
-    <a href="/" class="logo">DailyInsightor</a>
-    <nav>
-        <a href="/">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+    <div class="container header-content">
+        <a href="" class="logo">DailyInsightor</a>
+        <nav>
+            <a href="">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </nav>
+    </div>
 </header>
 
 <div class="container">
-    <h1>Find Trusted Resources & Support</h1>
-    <p>Explore reliable options, compare services, and get recommendations from trusted providers.</p>
-    
+    <h1>Explore Senior Care Resources</h1>
+    <p>Discover reliable senior care services, compare local options, get personalized recommendations, and connect with trusted providers in your area. Whether you're looking for in-home support, assisted living, or specialized health services – we've made it easy to find the right fit for your loved ones.</p>
+
     <a href="#" onclick="redirectToOffer(); return false;" class="button">
         Visit Website →
     </a>
-    
-    <p style="margin-top: 60px;">Browse millions of helpful resources and find the best fit for your needs.</p>
+
+    <p style="margin-top: 60px;">Browse millions of helpful resources and find the best fit for your needs. Senior care resources can include government programs, private services, and community organizations. It's important to research thoroughly to ensure quality and affordability. Many resources offer free consultations and assessments to help you start.</p>
+    <p>Technology is playing an increasing role in senior care, with apps for medication reminders, video calls for virtual doctor visits, and wearables for health monitoring. These tools can complement traditional care methods, providing peace of mind for families. Always verify the credibility of resources by checking reviews and accreditations.</p>
+    <p>For international readers, senior care options vary by country. In Europe, social welfare systems often provide more comprehensive coverage, while in Asia, family-based care is common. Regardless of location, the goal is to ensure dignity and comfort for older adults. If you have specific questions, our contact page is available for inquiries.</p>
 </div>
 
 <footer>
-    © 2026 DailyInsightor | All rights reserved
+    <div class="container">
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <p>© 2026 DailyInsightor. All rights reserved. Founded in 2024, providing insightful articles on daily life topics.</p>
+    </div>
 </footer>
 
 </body>
